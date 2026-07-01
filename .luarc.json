@@ -1,0 +1,11 @@
+{
+  "runtime": {
+    "version": "Lua 5.2"
+  },
+  "workspace": {
+    "library": [
+      "./lsp-rom",
+			"./lsp-globals"
+    ]
+  }
+}

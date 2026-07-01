@@ -1,1 +1,7 @@
 startup.lua
+.settings
+
+# These are copies of CC: Tweaks source code and documentation for the LuaLS lsp to find definitions and references for CraftOS and CC: Tweaks APIs.
+# The info to get the is in the README.
+lsp-rom
+lsp-globals
