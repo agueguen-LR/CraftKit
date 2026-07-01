@@ -20,7 +20,7 @@ function turnAround()
 end
 
 function place_digital_miner()
-	place(dm, turtle_info, turtle.placeUp)
+	place(digital_miner, turtle_info, turtle.placeUp)
 	os.sleep(0.2)
 
 	local miner = peripheral.wrap("top")
@@ -28,19 +28,19 @@ function place_digital_miner()
 
 	move(2, turtle_info, turtle.forward)
 	move(1, turtle_info, turtle.up)
-	place(qe, turtle_info, turtle.placeUp)
+	place(tesseract, turtle_info, turtle.placeUp)
 	move(1, turtle_info, turtle.down)
 	move(2, turtle_info, turtle.back)
 
 	turtle.turnRight()
 	move(2, turtle_info, turtle.forward)
-	place(qe, turtle_info, turtle.placeUp)
+	place(tesseract, turtle_info, turtle.placeUp)
 
 	turtle.turnRight()
 	move(1, turtle_info, turtle.forward)
 	turnAround()
 
-	place(ds, turtle_info, turtle.place)
+	place(chunk_loader, turtle_info, turtle.place)
 
 	turnAround()
 	move(30, turtle_info, turtle.forward)
