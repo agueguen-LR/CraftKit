@@ -100,7 +100,7 @@ end
 --- If the destination file already exists, the download is skipped.
 ---
 ---@param url string URL to download from.
----@param path string Local filesystem path to save the file.
+---@param path ccTweaked.fs.path Local filesystem path to save the file.
 ---@return boolean success Whether the file was successfully downloaded.
 local function download(url, path)
 	print("Downloading " .. url .. " to " .. path .. "...")

@@ -6,10 +6,8 @@
 
 local completion = require("cc.shell.completion")
 
--- Get the directory of this startup script as the base directory for CraftKit.
-local tArgs = { ... }
-local sDir = fs.getDir(tArgs[1])
+local craftkit_dir = settings.get("craftkit.path")
 
-shell.setPath(shell.path() .. ":/" .. fs.combine(sDir, "bin"))
+shell.setPath(shell.path() .. ":/" .. fs.combine(craftkit_dir, "bin"))
 
-shell.run(sDir .. "/sbin/craftd")
+shell.run(fs.combine(craftkit_dir, "sbin/craftd.lua"))
